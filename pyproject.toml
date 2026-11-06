@@ -1,0 +1,16 @@
+[project]
+name = "stock-market-api"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "curl-cffi",
+    "requests",
+    "beautifulsoup4",
+]
+
+[tool.uv]
+required-environments = [
+    "sys_platform == 'linux' and platform_machine == 'x86_64'"
+]
